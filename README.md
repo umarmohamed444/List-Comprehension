@@ -12,3 +12,28 @@ Output:
 
 Screenshot:
 ![image](https://github.com/user-attachments/assets/5c5054e1-3835-4ef6-826d-e7753ba87293)
+
+
+#Bubble Sort
+Task:
+Implement the Bubble Sort algorithm to sort an array of integers in ascending order.
+Example: Given [64, 34, 25, 12, 22, 11, 90], the output should be [11, 12, 22, 25, 34, 64, 90].
+
+Code:
+def bubble_sort(arr):
+    n=len(arr)
+    for i in range(n):
+        for j in range(0,n-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+    return arr
+arr=[64,34,25,12,22,11,90]
+result=bubble_sort(arr)
+print(result)
+
+Output:
+[11, 12, 22, 25, 34, 64, 90]
+
+Screenshot:
+![image](https://github.com/user-attachments/assets/1627e0fb-7dd9-4d8f-9d99-52bff5b067ce)
+
